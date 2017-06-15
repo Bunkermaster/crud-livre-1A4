@@ -28,7 +28,7 @@ if ($stmt->errorCode() !== "00000") {
 </head>
 <body>
 <table>
-<?php while($row = $stmt->fetch(PDO::FETCH_ASSOC)):?>
+<?php while(false !== $row = $stmt->fetch(PDO::FETCH_ASSOC)):?>
     <tr>
         <td><?=$row['titre']?></td>
     </tr>
